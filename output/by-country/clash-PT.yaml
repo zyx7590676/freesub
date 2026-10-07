@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇹 葡萄牙 (Portugal) 01 - xiaohe
-  server: 185.231.233.91
-  port: 17167
+  server: 31.129.22.141
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: ca438054771821250089399a2f33275e
+  type: vless
+  uuid: 2b781b4a-5942-48e0-a7f3-5a07b7b488c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
+    short-id: 15bcc0a77c3cacdf
+  servername: pt-root.sworkingvpn.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

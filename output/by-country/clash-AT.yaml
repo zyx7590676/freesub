@@ -12,18 +12,66 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  server: 152.53.1.40
+  server: 212.183.88.136
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  server: 212.183.88.136
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
+  server: 212.183.88.136
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇦🇹 奥地利 (Austria) 05 - xiaohe
+  server: 193.233.232.96
   port: 443
   udp: true
   type: vless
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-  servername: at.quattro-tech.ru
-  client-fingerprint: qq
+    public-key: uC4W93YTVI5kbpN5ih2WZfQjikpNBn61-AhljO8ExFg
+    short-id: fa764ccf
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇦🇹 奥地利 (Austria) 06 - xiaohe
+  server: 195.74.90.122
+  port: 443
+  udp: true
+  type: vless
+  uuid: 698b212d-ca12-4794-8256-252a6e1b4533
+  tls: true
+  servername: w2p6.vpnpolar.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /beeline
+    headers:
+      Host: w2p6.vpnpolar.online
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +79,10 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +90,9 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
+  - 🇦🇹 奥地利 (Austria) 06 - xiaohe
 rules:
 - MATCH,PROXIES

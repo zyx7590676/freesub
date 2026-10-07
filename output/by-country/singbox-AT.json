@@ -12,23 +12,99 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇦🇹 奥地利 (Austria) 02 - xiaohe",
-      "server": "152.53.1.40",
+      "server": "212.183.88.136",
       "server_port": 443,
-      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇹 奥地利 (Austria) 03 - xiaohe",
+      "server": "212.183.88.136",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇹 奥地利 (Austria) 04 - xiaohe",
+      "server": "212.183.88.136",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 05 - xiaohe",
+      "server": "193.233.232.96",
+      "server_port": 443,
+      "uuid": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "at.quattro-tech.ru",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "short_id": "43dcff53849b81e6"
+          "public_key": "uC4W93YTVI5kbpN5ih2WZfQjikpNBn61-AhljO8ExFg",
+          "short_id": "fa764ccf"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 06 - xiaohe",
+      "server": "195.74.90.122",
+      "server_port": 443,
+      "uuid": "698b212d-ca12-4794-8256-252a6e1b4533",
+      "tls": {
+        "enabled": true,
+        "server_name": "w2p6.vpnpolar.online",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/beeline",
+        "headers": {
+          "Host": "w2p6.vpnpolar.online"
         }
       }
     },
@@ -38,7 +114,11 @@
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 02 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 02 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 04 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 05 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 06 - xiaohe"
       ]
     },
     {
@@ -46,7 +126,11 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - xiaohe",
-        "🇦🇹 奥地利 (Austria) 02 - xiaohe"
+        "🇦🇹 奥地利 (Austria) 02 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 03 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 04 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 05 - xiaohe",
+        "🇦🇹 奥地利 (Austria) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

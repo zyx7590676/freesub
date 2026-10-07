@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇶🇦 卡塔尔 (Qatar) 01 - xiaohe
-  server: 34.18.31.5
+- name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  server: 83.147.18.75
   port: 443
   udp: true
   type: vless
-  uuid: bd82d5e7-4395-40e1-b34e-2974eb0c8555
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4
-    short-id: 9c8748aa3f7d4219
-  servername: www.cloudflare.com
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇶🇦 卡塔尔 (Qatar) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇶🇦 卡塔尔 (Qatar) 01 - xiaohe
+  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
 rules:
 - MATCH,PROXIES
